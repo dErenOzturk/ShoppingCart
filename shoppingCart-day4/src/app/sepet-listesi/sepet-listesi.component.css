@@ -1,0 +1,52 @@
+/* Google Fonts'tan 'Calibri' yazı tipini içeri aktar */
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+/* Sayfa stilini belirleyen CSS */
+body {
+    background-color: #eee; /* Sayfa arka plan rengi */
+    font-family: 'Calibri', sans-serif !important; /* Yazı tipi 'Calibri', alternatif olarak sans-serif kullan */
+}
+
+/* Üstündeki boşluğu 100 piksel yapmak için kullanılan stil sınıfı */
+.mt-100 {
+   margin-top: 100px;
+}
+
+/* Kartların stilini belirleyen CSS */
+.card {
+    margin-bottom: 30px; /* Kartların altındaki boşluk (margin-bottom) 30 piksel */
+    border: 0; /* Kartın sınır (border) özelliği kaldırıldı */
+    -webkit-transition: all .3s ease; /* Webkit tabanlı tarayıcılarda animasyon geçişi için */
+    transition: all .3s ease; /* Tarayıcılar arası animasyon geçişi için */
+    letter-spacing: .5px; /* Harfler arasındaki boşluk (letter-spacing) 0.5 piksel */
+    border-radius: 8px; /* Kartın kenar yuvarlaklığı (border-radius) 8 piksel */
+    -webkit-box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05); /* Kartın gölgesi için Webkit tabanlı tarayıcılarda stil */
+    box-shadow: 1px 5px 24px 0 rgba(68,102,242,.05); /* Kartın gölgesi için stil */
+}
+
+/* Kart başlığının stilini belirleyen CSS */
+.card .card-header {
+    background-color: #fff; /* Kart başlığının arka plan rengi */
+    border-bottom: none; /* Kart başlığının alt sınırını kaldır */
+    padding: 24px; /* Kart başlığının dolgusu (padding) 24 piksel */
+    border-bottom: 1px solid #f6f7fb; /* Kart başlığının alt çizgisinin stilini belirle */
+    border-top-left-radius: 8px; /* Kart başlığının sol üst kenar yuvarlaklığı */
+    border-top-right-radius: 8px; /* Kart başlığının sağ üst kenar yuvarlaklığı */
+}
+
+/* İlk kart başlığının kenar yuvarlaklığını belirleyen CSS */
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+/* Kart içeriğinin stilini belirleyen CSS */
+.card .card-body {
+    padding: 30px; /* Kart içeriğinin dolgusu (padding) 30 piksel */
+    background-color: transparent; /* Kart içeriğinin arka plan rengi şeffaf */
+}
+
+/* Primary düğmelerin stilini belirleyen CSS */
+.btn-primary, .btn-primary.disabled, .btn-primary:disabled {
+    background-color: #4466f2!important; /* Düğmenin arka plan rengi */
+    border-color: #4466f2!important; /* Düğmenin kenarlık rengi */
+}
